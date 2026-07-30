@@ -4,7 +4,6 @@ jdk:
 before_install:
   - ./scripts/prepareJitpackEnvironment.sh
 
-# 👇 Ye line GPG signing ko forcefully bypass kar degi
 install:
-  - ./gradlew publishToMavenLocal -x signReleasePublication
+  - ./gradlew publishToMavenLocal -Psigning.required=false -x signReleasePublication -x signCommonPublication -x signFfmpegPublication -x signLibraryPublication -x signAria2cPublication
   
