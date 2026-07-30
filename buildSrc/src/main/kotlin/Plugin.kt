@@ -23,12 +23,8 @@ open class PublishPlugin : Plugin<Project> {
                     println("Published!")
                     project.configureAndroid()
                     project.configurePublish(id = artifactId)
-                    project.configureSigning()
                 }
             }
         }
     }
 }
-
-
-
