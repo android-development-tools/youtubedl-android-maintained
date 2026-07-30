@@ -1,9 +1,6 @@
 jdk:
   - openjdk17
-
 before_install:
   - ./scripts/prepareJitpackEnvironment.sh
-
 install:
-  - ./gradlew publishToMavenLocal -Psigning.required=false -x signReleasePublication -x signCommonPublication -x signFfmpegPublication -x signLibraryPublication -x signAria2cPublication
-  
+  - ./gradlew publishToMavenLocal
