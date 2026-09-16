@@ -1,10 +1,10 @@
-# yt-dlp-android
+# youtubedl-android-maintained
 
 > **Note:** This is an actively maintained archive/fork of the original `youtubedl-android` library. Since the original projects were abandoned, this repository aims to keep the library alive, updated, and accessible for the Android open-source community.
 
 Android library wrapper for [yt-dlp](https://github.com/yt-dlp/yt-dlp) executable.
 
-[![](https://jitpack.io/v/YOUR_USERNAME/YOUR_REPO_NAME.svg)](https://jitpack.io/#YOUR_USERNAME/YOUR_REPO_NAME)
+[![](https://jitpack.io/v/android-development-tools/youtubedl-android-maintained.svg)](https://jitpack.io/#android-development-tools/youtubedl-android-maintained)
 
 ## Credits
 * [youtubedl-java](https://github.com/sapher/youtubedl-java) by sapher
@@ -15,8 +15,6 @@ Android library wrapper for [yt-dlp](https://github.com/yt-dlp/yt-dlp) executabl
 
 ## Installation (via JitPack)
 
-To use this library in your modern Android project, we use JitPack.
-
 **Step 1:** Add the JitPack repository to your build file.
 In your `settings.gradle.kts` (or project level `build.gradle`):
 ```kotlin
@@ -25,6 +23,6 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url = uri("[https://jitpack.io](https://jitpack.io)") } // Add this line
+        maven { url = uri("[https://jitpack.io](https://jitpack.io)") }
     }
 }
